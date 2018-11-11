@@ -1,8 +1,7 @@
 <?php 
-
 SESSION_START();
 $error = '';
-include('includes/connection.php');
+$db = mysqli_connect('localhost','root','', 'cms') or Die("Error connecting to database.");
 
 if (isset($_POST['submit'])){
     if (empty($_POST['uname']) || empty($_POST['pswd'])) {
@@ -20,12 +19,11 @@ if (isset($_POST['submit'])){
             $_SESSION['userid'] = $row['user_id'];
             $_SESSION['firstname'] = $row['user_firstname'];
             $error = "Success!";
-            header("location: index.php");
+            header("location: ../templates/home.php");
             } else {
                 $error = "Username or password incorrect.";
             }
         }
     }
 }
-
 ?>
