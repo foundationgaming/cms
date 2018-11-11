@@ -1,0 +1,10 @@
+CREATE TABLE `cms`.`user` (
+  `user_id` INT NOT NULL AUTO_INCREMENT,
+  `user_username` VARCHAR(45) NOT NULL,
+  `user_firstname` VARCHAR(255) NOT NULL,
+  `user_lastnamer` VARCHAR(255) NOT NULL,
+  `user_email` VARCHAR(255) NOT NULL,
+  `user_password` VARCHAR(255) NOT NULL,
+  `user_confirmed` INT NOT NULL,
+  PRIMARY KEY (`user_id`));
+

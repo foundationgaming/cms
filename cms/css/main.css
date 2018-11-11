@@ -1,0 +1,44 @@
+/*
+** #2D2D2D - Dark Grey
+** #ABABAB - Light Grey
+** #8D2663 - Magenta
+** #000000 - Black
+** #FFFFFF - White
+*/
+
+body {
+    background-color: #2D2D2D;
+    font-family: 'Ubuntu', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+span {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/*** LOGIN FORM ***/
+.cms-login-form {
+    display: block;
+    min-width: 400px;
+    width: 33vw;
+    height: 50vh;
+    margin: 25vh auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #8D2663;
+    text-align: center;
+    font-size: 20px;
+}
+.cms-login-form>input {
+    width: 90%;
+    height: 6vh;
+    margin: 1vh auto;
+    border: 2px solid #ABABAB;
+    font-size: 20px;
+}
+.cms-login-form>input::placeholder {
+    padding: 10px;
+}
